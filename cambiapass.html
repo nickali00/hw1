@@ -1,0 +1,40 @@
+<html>
+  <head>
+      <title>Registrazione</title>
+        <link rel="stylesheet"  type="text/css" href="index.css"/>
+        <link rel="stylesheet"  type="text/css" href="login.css"/>
+      <script src="inviaemail.js" defer="true"></script>
+  </head>
+  <body>
+    <header>
+      <nav id = "flex2">
+        <div class="menu"><a href="index.html">HOME</a></div>
+        <div class="menu"><a href="login.html">LOGIN</a></div>
+        <div class="menu"><a href="registrazione.html">REGISTRATI</a></div>
+      </nav>
+    </header>
+    <section>
+      <div class="inserisci">
+        <h1>CAMBIA PASSWORD</h1>
+        <p>abbiamo inviato un email per il codice</p>
+        <form action ="tblogin.php" method ="post" onsubmit="submitForm(event)" class="fro">
+          <section class="credenziali">
+            <h4 class="in">codice</h4> <input class="inputheader" type="text" name="email" >
+          </section>
+          <section class="credenziali">
+            <h4 class="in">password</h4><input class="inputheader" type="password" name="pas">
+          </section>
+          <section class="credenziali">
+            <h4 class="in">conferma password</h4><input class="inputheader" type="password" name="pas">
+          </section>
+          <div class="divin">
+            <div class="menu"><a href="index.html">indietro</a></div>
+            <div class="menu"><input type="submit" value="conferma" ></div>
+          </div>
+        </form>
+        <div class="nascosto" name=" sem" >1</div>
+        <div class="errore"></div>
+      </div>
+      </section>
+  </body>
+</html>
